@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <!--& ===== Favicon ===== -->
+    <link rel="icon" href="./images/logo.png" />
+    <!--& ===== Font Awesome Library Icons ===== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- &===== Bootstrap  System ===== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://develekko.github.io/movie/assets/css/animate.min.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- &===== Main CSS Style Sheet ===== -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav class="position-fixed top-0 start-0 vh-100 text-center">
+        <div class="inner-nav d-flex flex-column justify-content-between">
+            <ul class="p-0 m-0 mx-5">
+                <li><a href="#">Now Playing</a></li>
+                <li class="Popular "><a href="#">Popular</a></li>
+                <li class="TopRated"><a href="#">Top Rated</a></li>
+                <li class="Trending"><a href="#">Trending</a></li>
+                <li class="Upcoming"><a href="#">Upcoming</a></li>
+                <li class="ContactUs"><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+                <p>Copyright &copy; 2022 All Rights Reserved.</p>
+                <p>Created by <span class="creator-name"><a href="https://github.com/Develekko">Housam
+                            Ramadan</a></span></p>
+            </div>
+        </div>
+
+        <div class="fixed-icons d-flex flex-column justify-content-between align-items-center h-100 py-4">
+            <div class="nav-logo">
+                <img src="./images/logo.png" class="img-fluid" alt="">
+            </div>
+            <div class="nav-menu">
+                <i class="fa-solid fa-align-justify open-close-icon"></i>
+            </div>
+            <div class="nav-social">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="mainContent">
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search">
+            <i id="clearSearch" class="fas fa-times position-absolute text-white"></i>
+        </div>
+        <section class="movies-section py-5">
+            <div class="container">
+                <div class="row g-4">
+                </div>
+            </div>
+        </section>
+
+        <div class="container contact">
+            <h1 class="contact-us text-white">Contact US</h1>
+
+            <form>
+
+                <div class="row row-spacing">
+                    <div class="col-md-6">
+                        <div class="form-group ">
+                            <label for="name" class="visually-hidden">Enter Your Name</label>
+                            <input type="text" class="form-control form-control-custom" id="name"
+                                placeholder="Enter Your Name" required>
+                            <p class="invisible text-danger">Invalid Name , only Characters allowed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Enter Your Email</label>
+                            <input type="email" class="form-control form-control-custom" id="email"
+                                placeholder="Enter Your Email" required>
+                            <p class="invisible text-danger">Invalid Email, try example@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-spacing">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone" class="visually-hidden">Enter Your Phone</label>
+                            <input type="tel" class="form-control form-control-custom" id="phone"
+                                placeholder="Enter Your Phone" required>
+                            <p class="invisible text-danger">Invalid Phone Number</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="age" class="visually-hidden">Enter Your Age</label>
+                            <input type="number" class="form-control form-control-custom" id="age"
+                                placeholder="Enter Your Age" required>
+                            <p class="invisible text-danger">Your Age must be over 16+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-spacing">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="password" class="visually-hidden">Enter Your Password</label>
+                            <input type="password" class="form-control form-control-custom" id="password"
+                                placeholder="Enter Your Password" required>
+
+                            <p class="invisible text-danger">password must contain numbers & letters at least 8
+                                characters</p>
+                            <i id="togglePassword" class="fas fa-eye-slash  text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="reenter-password" class="visually-hidden">ReEnter Password</label>
+                            <input type="password" class="form-control form-control-custom" id="reenter-password"
+                                placeholder="ReEnter Password" required>
+                            <p class="invisible  text-danger">password not match</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-custom btn-lg rounded-2 mb-3 ">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="back-to-top" class="active">
+        <a href="#">
+            <i class="fa-solid fa-arrow-up-long text-white"></i>
+        </a>
+    </div>
+
+    <!-- &===== Bootstrap  System ===== -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- &===== Main JS  ===== -->
+    <script src="./JS/index.js" type="module"></script>
+
+</body>
+
+</html>
