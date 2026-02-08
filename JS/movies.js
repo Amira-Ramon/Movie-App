@@ -51,6 +51,16 @@ function displayData(data) {
         </div>`;
     }
     htmlContainer.innerHTML = cardsHTML;
+
+    // Hide loader
+    const loadingScreen = document.getElementById("loadingScreen");
+    if (loadingScreen) {
+        loadingScreen.style.transition = "opacity 0.5s ease";
+        loadingScreen.style.opacity = "0";
+        setTimeout(() => {
+            loadingScreen.style.display = "none";
+        }, 500);
+    }
 }
 
 export { getData, getTrending, searchMovie };
